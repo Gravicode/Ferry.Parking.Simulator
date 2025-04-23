@@ -1,0 +1,2650 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Aspose.OCR</name>
+  </assembly>
+  <members>
+    <member name="T:Aspose.OCR.OcrRecognizeEventHandler">
+      <summary>
+            A delegate to track the progress of multi-page image recognition.
+            </summary>
+      <param name="e">Instance of the <see cref="T:Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs" /></param>
+    </member>
+    <member name="T:Aspose.OCR.AsposeOcr">
+      <summary>
+            Main API for Aspose OCR library
+            </summary>
+    </member>
+    <member name="E:Aspose.OCR.AsposeOcr.OcrProgress">
+      <summary>
+            An event to track the progress of multi-page image recognition.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeFast(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on images / documents.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of string with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.Recognize(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on images / documents.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.Recognize(Aspose.OCR.OcrInput,Aspose.OCR.RecognitionSettings,System.Threading.CancellationToken)">
+      <summary>
+            Recognizes text on images / documents.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.RecognitionSettings" />.</param>
+      <param name="cancellationToken">CancellationToken object.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.Recognize(Aspose.OCR.OcrInput,Aspose.OCR.RecognitionSettings)">
+      <summary>
+            Recognizes text on images / documents.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.RecognitionSettings" />.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeStreetPhoto(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on street photos.
+            </summary>
+      <remarks>
+            Extract text from street photos, traffic camera images, ID cards, driver licenses, and other images with sparse text and noisy/colored backgrounds.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeHandwrittenText(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes handwritten text on images.
+            </summary>
+      <remarks>
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeReceipt(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on receipts.
+            </summary>
+      <remarks>
+            Recognizes invoice with the ability to specify <see cref="T:Aspose.OCR.ReceiptRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeReceipt(Aspose.OCR.OcrInput,Aspose.OCR.ReceiptRecognitionSettings)">
+      <summary>
+            Recognizes text on receipts.
+            </summary>
+      <remarks>
+            Recognizes invoice with the ability to specify <see cref="T:Aspose.OCR.ReceiptRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.ReceiptRecognitionSettings" />.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeInvoice(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on invoices.
+            </summary>
+      <remarks>
+            Recognizes invoice with the ability to specify <see cref="T:Aspose.OCR.InvoiceRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeInvoice(Aspose.OCR.OcrInput,Aspose.OCR.InvoiceRecognitionSettings)">
+      <summary>
+            Recognizes text on invoices.
+            </summary>
+      <remarks>
+            Recognizes invoice with the ability to specify <see cref="T:Aspose.OCR.InvoiceRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.InvoiceRecognitionSettings" />.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeIDCard(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on ID card.
+            </summary>
+      <remarks>
+            Recognizes ID cards with the ability to specify <see cref="T:Aspose.OCR.IDCardRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeIDCard(Aspose.OCR.OcrInput,Aspose.OCR.IDCardRecognitionSettings)">
+      <summary>
+            Recognizes text on ID card.
+            </summary>
+      <remarks>
+            Recognizes ID cards with the ability to specify <see cref="T:Aspose.OCR.IDCardRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.IDCardRecognitionSettings" />.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeCarPlate(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on car plate.
+            </summary>
+      <remarks>
+            Recognizes car plates with the ability to specify <see cref="T:Aspose.OCR.CarPlateRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeCarPlate(Aspose.OCR.OcrInput,Aspose.OCR.CarPlateRecognitionSettings)">
+      <summary>
+            Recognizes text on car plate.
+            </summary>
+      <remarks>
+            Recognizes car plates with the ability to specify <see cref="T:Aspose.OCR.CarPlateRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.CarPlateRecognitionSettings" />.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizePassport(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes text on passport.
+            </summary>
+      <remarks>
+            Recognizes passports with the ability to specify <see cref="T:Aspose.OCR.PassportRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizePassport(Aspose.OCR.OcrInput,Aspose.OCR.PassportRecognitionSettings)">
+      <summary>
+            Recognizes text on passport.
+            </summary>
+      <remarks>
+            Recognizes passports with the ability to specify <see cref="T:Aspose.OCR.PassportRecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, directory, arrays, archives.
+            </remarks>
+      <param name="input">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.PassportRecognitionSettings" />.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeLines(Aspose.OCR.OcrInput)">
+      <summary>
+            Recognizes images that contain single line of text.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, folder, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeLines(Aspose.OCR.OcrInput,Aspose.OCR.RecognitionSettings)">
+      <summary>
+            Recognizes images that contain single line of text.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, folder, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="settings">Recognition settings <see cref="T:Aspose.OCR.RecognitionSettings" />.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects with image recognition results.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.DetectRectangles(Aspose.OCR.OcrInput)">
+      <summary>
+            Detects text areas on images.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, folder, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.RectangleOutput" /> with detected text areas or lines.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.DetectRectangles(Aspose.OCR.OcrInput,Aspose.OCR.AreasType,System.Boolean)">
+      <summary>
+            Detects text areas on images.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, folder, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="areasType">Determinates wich rectangles to return - line or paragraphs.</param>
+      <param name="detectAreas">Enable automatic text areas detection.</param>
+      <returns>List of <see cref="T:Aspose.OCR.RectangleOutput" /> with detected text areas or lines.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeCharacters(Aspose.OCR.OcrInput)">
+      <summary>
+            Detects symbols on images.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, folder, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of <see cref="T:Aspose.OCR.CharacterRecognitionResult" /> with detected symbols data.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.RecognizeCharacters(Aspose.OCR.OcrInput,Aspose.OCR.DetectAreasMode,Aspose.OCR.Language)">
+      <summary>
+            Detects symbols on images.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, folder, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="detectAreasMode">Determines the type of neural network used for areas detection.</param>
+      <param name="language">Language used for OCR..</param>
+      <returns>List of <see cref="T:Aspose.OCR.Character" /> with detected symbols data.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.CalculateSkew(Aspose.OCR.OcrInput)">
+      <summary>
+            Calculates the skew angles of an images.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, stream, folder, arrays, archives.
+            </summary>
+      <param name="images">The container with sources.<see cref="T:Aspose.OCR.OcrInput" /></param>
+      <returns>List of skew angles in degrees <see cref="T:Aspose.OCR.SkewOutput" />.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.DetectDefects(Aspose.OCR.OcrInput,Aspose.OCR.DefectType)">
+      <summary>
+            Automatically find problematic areas of an image that can significantly impact the accuracy of OCR.
+            Supports PNG, JPEG, BMP, TIFF, JFIF, and GIF images provided as a file, stream, or pixel array. Supports bulk recognition.
+            </summary>
+      <param name="images">Source images <see cref="T:Aspose.OCR.OcrInput" /></param>
+      <param name="defectType">The types of defects to be recognized <see cref="T:Aspose.OCR.DefectType" /></param>&gt;
+            <returns>Detected image defects or ab empty collection if no defect found <see cref="T:Aspose.OCR.DefectOutput" />.</returns></member>
+    <member name="M:Aspose.OCR.AsposeOcr.ImageHasText(System.String,System.String,Aspose.OCR.RecognitionSettings,System.Boolean,System.Boolean)">
+      <summary>
+            Check if the image contains the provided text fragment.
+            </summary>
+      <remarks>
+            Recognizes image with the ability to specify <see cref="T:Aspose.OCR.RecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF.
+            </remarks>
+      <param name="fullPath">Path to the image.</param>
+      <param name="text">Text fragment for searching on the image.</param>
+      <param name="settings">Recognition settings.</param>
+      <param name="ignoreCase">True - means a case-insensitive search.</param>
+      <param name="autoSkew">Enables the automatic image skew correction.</param>
+      <returns>True if image contains text fragment. False - image doesn't contains text fragment.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.ImageHasText(System.String,System.Text.RegularExpressions.Regex,Aspose.OCR.RecognitionSettings,System.Boolean)">
+      <summary>
+            Check if the image text matches the provided regular expression.
+            </summary>
+      <remarks>
+            Recognizes image with the ability to specify <see cref="T:Aspose.OCR.RecognitionSettings" />.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF.
+            </remarks>
+      <param name="fullPath">Path to the image.</param>
+      <param name="regex">System.Text.RegularExpressions object with the provided pattern and options.</param>
+      <param name="settings">Recognition settings.</param>
+      <param name="autoSkew">Enables the automatic image skew correction.</param>
+      <returns>True if image text matches the provided regular expression.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.CompareImageTexts(System.String,System.String,Aspose.OCR.RecognitionSettings,System.Boolean)">
+      <summary>
+            Check if two images contain the same text.
+            </summary>
+      <param name="fullPath1">Path to the first image.</param>
+      <param name="fullPath2">Path to the second image.</param>
+      <param name="settings">Recognition settings.</param>
+      <param name="ignoreCase">True - means a case-insensitive search.</param>
+      <returns>True if images have the same text (90% similarity).</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.ImageTextDiff(System.String,System.String,Aspose.OCR.RecognitionSettings,System.Boolean,System.Boolean)">
+      <summary>
+            Compare the texts on the two images and return a number representing how similar they are (0 to 1).
+            </summary>
+      <param name="fullPath1">Path to the first image.</param>
+      <param name="fullPath2">Path to the second image.</param>
+      <param name="settings">Recognition settings.</param>
+      <param name="ignoreCase">True - means a case-insensitive search.</param>
+      <param name="autoSkew">Enables the automatic image skew correction.</param>
+      <returns>0 means that the texts are completely different; 1 means the texts are identical.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.CorrectSpelling(System.String,Aspose.OCR.SpellChecker.SpellCheckLanguage,System.String)">
+      <summary>
+            Corrects text (replaces misspelled words).
+            </summary>
+      <param name="text">Text for correction.</param>
+      <param name="language">Dictionary to use.</param>
+      <param name="dictionaryPath">Optionally. Full path to the user dictionary (frequency dictionary). 
+            Dictionary file format:
+            Plain text file in UTF-8 encoding.
+            Word and Word Frequency are separated by space or tab.Per default, the word is expected in the first column and the frequency in the second column.
+            Every word-frequency-pair in a separate line.A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), 
+            or a carriage return immediately followed by a line feed("\r\n").
+            Every word is expected to be in lower case.
+            </param>
+      <returns>Text with replaced words.</returns>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.SaveMultipageDocument(System.String,Aspose.OCR.SaveFormat,System.Collections.Generic.List{Aspose.OCR.RecognitionResult},System.String)">
+      <summary>
+            Allows to get multipage document from list of RecognitionResult objects
+            </summary>
+      <param name="fullFileName">Filename with a path for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf, Xlsx, Rtf, Json, Xml).</param>
+      <param name="results">List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects.</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.SaveMultipageDocument(System.String,Aspose.OCR.SaveFormat,System.Collections.Generic.List{Aspose.OCR.RecognitionResult},System.Boolean,Aspose.OCR.SpellChecker.SpellCheckLanguage,System.String,System.String)">
+      <summary>
+            Allows to get multipage document from list of RecognitionResult objects
+            </summary>
+      <param name="fullFileName">Filename with a path for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf, Xlsx, Rtf, Json, Xml).</param>
+      <param name="results">List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects.</param>
+      <param name="applySpellingCorrection">Set true to correct misspelled words in case you have such in your recognition result.</param>
+      <param name="language">Dictionary for spell check (optional).</param>
+      <param name="dictionaryPath">Optionally. Full path to the user dictionary in .txt format. Format is [word - space - frequence(number)].
+            Example: the 23135851162\nthat 3400031103\n</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.SaveMultipageDocument(System.IO.MemoryStream,Aspose.OCR.SaveFormat,System.Collections.Generic.List{Aspose.OCR.RecognitionResult},System.String)">
+      <summary>
+            Allows to get multipage document from list of RecognitionResult objects
+            </summary>
+      <param name="stream">MemoryStream for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf, Xlsx, Rtf, Json, Xml).</param>
+      <param name="results">List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects.</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="M:Aspose.OCR.AsposeOcr.SaveMultipageDocument(System.IO.MemoryStream,Aspose.OCR.SaveFormat,System.Collections.Generic.List{Aspose.OCR.RecognitionResult},System.Boolean,Aspose.OCR.SpellChecker.SpellCheckLanguage,System.String,System.String)">
+      <summary>
+            Allows to get multipage document from list of RecognitionResult objects
+            </summary>
+      <param name="stream">MemoryStream for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf, Xlsx, Rtf, Json, Xml).</param>
+      <param name="results">List of <see cref="T:Aspose.OCR.RecognitionResult" /> objects.</param>
+      <param name="applySpellingCorrection">Set true to correct misspelled words in case you have such in your recognition result.</param>
+      <param name="language">Dictionary for spell check (optional).</param>
+      <param name="dictionaryPath">Optionally. Full path to the user dictionary in .txt format. Format is [word - space - frequence(number)].
+            Example: the 23135851162\nthat 3400031103\n</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="T:Aspose.OCR.Filters.InterpolationFilterType">
+      <summary>
+            Interpolations, used for scale images.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Box">
+      <summary>
+            The 'Box' Or 'Nearest Neighbor' filterю
+            http://www.imagemagick.org/Usage/filter/#box
+            <See href="http://www.imagemagick.org/Usage/filter/#box"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Triangle">
+      <summary>
+            The 'Triangle' or 'Bilinear' interpolation filter just takes the interpolation 
+            of the nearest neighbourhood one step further.
+            http://www.imagemagick.org/Usage/filter/#triangle
+            <See href="http://www.imagemagick.org/Usage/filter/#triangle"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Hermite">
+      <summary>https://en.wikipedia.org/wiki/Hermite_interpolation
+            <See href="https://en.wikipedia.org/wiki/Hermite_interpolation"></See><See href="http://www.imagemagick.org/Usage/filter/#hermite-c"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Bell">
+      <summary>http://www.imagemagick.org/Usage/filter/#gaussian
+            <See href="http://www.imagemagick.org/Usage/filter/#gaussian"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.CubicBSpline">
+      <summary>http://www.imagemagick.org/Usage/filter/#cubics
+            <See href="http://www.imagemagick.org/Usage/filter/#cubics"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Lanczos3">
+      <summary>https://en.wikipedia.org/wiki/Lanczos_resampling
+            <See href="https://en.wikipedia.org/wiki/Lanczos_resampling"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Mitchell">
+      <summary>http://www.imagemagick.org/Usage/filter/#mitchell
+            <See href="http://www.imagemagick.org/Usage/filter/#mitchell"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Cosine">
+      <summary>https://en.wikipedia.org/wiki/Trigonometric_interpolation
+            <See href="https://en.wikipedia.org/wiki/Trigonometric_interpolation"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.CatmullRom">
+      <summary>
+            The 'Catrom' (Catmull-Rom) filter is a well known standard 
+            Cubic Filter often used as a interpolation function. 
+            http://www.imagemagick.org/Usage/filter/#catrom-c
+            <See href="http://www.imagemagick.org/Usage/filter/#catrom-c"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Quadratic">
+      <summary>http://www.imagemagick.org/Usage/filter/#quadratic
+            <See href="http://www.imagemagick.org/Usage/filter/#quadratic"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.QuadraticBSpline">
+      <summary>https://en.wikipedia.org/wiki/Spline_interpolation
+            <See href="https://en.wikipedia.org/wiki/Spline_interpolation"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.CubicConvolution">
+      <summary>https://en.wikipedia.org/wiki/Directional_Cubic_Convolution_Interpolation
+            <See href="https://en.wikipedia.org/wiki/Directional_Cubic_Convolution_Interpolation"></See></summary>
+    </member>
+    <member name="F:Aspose.OCR.Filters.InterpolationFilterType.Lanczos8">
+      <summary>https://en.wikipedia.org/wiki/Lanczos_resampling
+            <See href="https://en.wikipedia.org/wiki/Lanczos_resampling"></See></summary>
+    </member>
+    <member name="T:Aspose.OCR.Metered">
+      <summary>
+            Provides methods to set metered key.
+            </summary>
+      <example>
+            In this example, an attempt will be made to set metered public and private key
+            
+            <code>
+            [C#]
+            
+            Metered matered = new Metered();
+            matered.SetMeteredKey("PublicKey", "PrivateKey");
+            
+            
+            [Visual Basic]
+            
+            Dim matered As Metered = New Metered
+            matered.SetMeteredKey("PublicKey", "PrivateKey")
+            </code></example>
+    </member>
+    <member name="M:Aspose.OCR.Metered.SetMeteredKey(System.String,System.String)">
+      <summary>
+            Sets metered public and private key.
+            If you purchase metered license, when start application, this API should be called, normally, this is enough. 
+            However, if always fail to upload consumption data and exceed 24 hours, the license will be set to evaluation status, 
+            to avoid such case, you should regularly check the license status, if it is evaluation status, call this API again.
+            </summary>
+      <param name="publicKey">public key</param>
+      <param name="privateKey">private key</param>
+    </member>
+    <member name="M:Aspose.OCR.Metered.GetConsumptionQuantity">
+      <summary>
+            Gets consumption file size.
+            </summary>
+      <returns>Consumption quantity.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Metered.GetConsumptionCredit">
+      <summary>
+            Gets consumption credit.
+            </summary>
+      <returns>Consumption quantity.</returns>
+    </member>
+    <member name="T:Aspose.OCR.License">
+      <summary>
+            Provides methods to license the component.
+            </summary>
+      <example>
+            In this example, an attempt will be made to find a license file named MyLicense.lic
+            in the folder that contains 
+            
+            
+            the component, in the folder that contains the calling assembly,
+            in the folder of the entry assembly and then in the embedded resources of the calling assembly.
+            <code>
+            [C#]
+            
+            License license = new License();
+            license.SetLicense("MyLicense.lic");
+            </code></example>
+    </member>
+    <member name="M:Aspose.OCR.License.SetLicense(System.String)">
+      <summary>
+            Licenses the component.
+            </summary>
+      <remarks>
+        <p>Tries to find the license in the following locations:</p>
+        <p>1. Explicit path.</p>
+        <p>2. The folder that contains the Aspose component assembly.</p>
+        <p>3. The folder that contains the client's calling assembly.</p>
+        <p>4. The folder that contains the entry (startup) assembly.</p>
+        <p>5. An embedded resource in the client's calling assembly.</p>
+        <p>
+          <b>Note:</b>On the .NET Compact Framework, tries to find the license only in these locations:</p>
+        <p>1. Explicit path.</p>
+        <p>2. An embedded resource in the client's calling assembly.</p>
+      </remarks>
+      <example>
+            In this example, an attempt will be made to find a license file named MyLicense.lic
+            in the folder that contains 
+            
+            
+            the component, in the folder that contains the calling assembly,
+            in the folder of the entry assembly and then in the embedded resources of the calling assembly.
+            <code>
+            [C#]
+            
+            License license = new License();
+            license.SetLicense("MyLicense.lic");
+            </code><param name="licenseName">Can be a full or short file name or name of an embedded resource.
+            Use an empty string to switch to evaluation mode.</param></example>
+    </member>
+    <member name="P:Aspose.OCR.License.IsLicensed">
+      <summary>
+            Gets a value indicating whether product is licensed.
+            </summary>
+      <value>
+        <c>true</c> if product is licensed; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="M:Aspose.OCR.License.SetLicense(System.IO.Stream)">
+      <summary>
+            Licenses the component.
+            </summary>
+      <param name="stream">A stream that contains the license.</param>
+      <remarks>
+        <p>Use this method to load a license from a stream.</p>
+      </remarks>
+      <example>
+        <code>
+            [C#]
+            
+            License license = new License();
+            license.SetLicense(myStream);
+            </code>
+      </example>
+    </member>
+    <member name="T:Aspose.OCR.AreasType">
+      <summary>
+            Determines the type of regions detected by the model.
+            </summary>
+      <remarks>
+            Used in the <see cref="!:AsposeOcr.GetRectangles(string, AreasType, bool)" /> to indicate which result will be obtained - paragraph coordinates or line coordinates.
+            </remarks>
+    </member>
+    <member name="F:Aspose.OCR.AreasType.PARAGRAPHS">
+      <summary>
+            Sets regions as paragraphs
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.AreasType.LINES">
+      <summary>
+            Sets regions as lines
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.AreasType.WORDS">
+      <summary>
+            Sets regions as words
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.CharactersAllowedType">
+      <summary>
+            Determines the type of characters allowed for recognition result.
+            </summary>
+      <remarks>
+            Used in the <see cref="T:Aspose.OCR.RecognitionSettings" /> to indicate which characters will be recognized.
+            </remarks>
+    </member>
+    <member name="F:Aspose.OCR.CharactersAllowedType.ALL">
+      <summary>
+            Recognize all characters.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.CharactersAllowedType.LATIN_ALPHABET">
+      <summary>
+            Recognize only if character is an latin alphabetic letter.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.CharactersAllowedType.DIGITS">
+      <summary>
+            Recognize only if character is hexadecimal digit.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs">
+      <summary>
+            Class for OcrProgress event recognition arguments.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs.CurrentPage">
+      <summary>
+            The page that started to be recognized.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs.CurrentImage">
+      <summary>
+            Image on the page.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs.Duration">
+      <summary>
+            The time from the start of the recognition process to the moment the current image is recognized.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs.FileName">
+      <summary>
+            Processed file name.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs.OperationName">
+      <summary>
+            The name of the transaction in progress.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter">
+      <summary>
+            Base class for image processing commands.
+            </summary>
+      <summary>
+            Base class for image processing commands.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Default">
+      <summary>
+            Default filters collection contain AutoSkew filter
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Empty">
+      <summary>
+            Empty filters collection
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Binarize">
+      <summary>
+            Converts an image to black-and-white image.
+            Binary images are images whose pixels have only two possible intensity values. 
+            They are normally displayed as black and white. Numerically, the two values are often 0 for black, and 255 for white.
+            Binary images are produced by auto thresholding an image.
+            </summary>
+      <returns>BinarizeFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Resize(System.Int32,System.Int32,Aspose.OCR.Filters.InterpolationFilterType)">
+      <summary>
+            Rescale image - Upscale or downscale image resolution.
+            </summary>
+      <param name="width">The new width of the image.</param>
+      <param name="height">The new height of the image.</param>
+      <param name="type">
+        <see cref="T:Aspose.OCR.Filters.InterpolationFilterType" />
+      </param>
+      <returns>ResizeFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Resize(System.Int32,System.Int32)">
+      <summary>
+            Rescale image - Upscale or downscale image resolution.
+            InterpolationFilterType = Lanczos8
+            </summary>
+      <param name="width">The new width of the image.</param>
+      <param name="height">The new height of the image.</param>
+      <returns>ResizeFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Dilate">
+      <summary>
+            Dilation adds pixels to the boundaries of objects in an image.
+            </summary>
+      <returns>DilateFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Invert">
+      <summary>
+            Automatically inverts colors in a document image.
+            </summary>
+      <returns>InvertFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Rotate(System.Single)">
+      <summary>
+            Rotate original image.
+            </summary>
+      <param name="angle">Angle of rotation.<value>From -360 to 360</value></param>
+      <returns>RotateFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Scale(System.Single)">
+      <summary>
+            Rescale image - Upscale or downscale image resolution.
+            InterpolationFilterType = Lanczos8
+            </summary>
+      <param name="ratio">The scaling factor. <value>Recommended from 0.1 to 1 to shrink. From 1 to 10 to enlarge.</value></param>
+      <returns>ScaleFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Scale(System.Single,Aspose.OCR.Filters.InterpolationFilterType)">
+      <summary>
+            Rescale image - Upscale or downscale image resolution.
+            </summary>
+      <param name="ratio">The scaling factor. <value>Recommended from 0.1 to 1 to shrink. From 1 to 10 to enlarge.</value></param>
+      <param name="type">
+        <see cref="T:Aspose.OCR.Filters.InterpolationFilterType" />
+      </param>
+      <returns>ScaleFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.ToGrayscale">
+      <summary>
+            Converts an image to grayscale image.
+            Grayscale image have 256 level of light in image (0 to 255).
+            </summary>
+      <returns>GrayscaleFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Threshold(System.Int32)">
+      <summary>
+            Create a binary image based on setting a threshold value on the pixel intensity of the original image.
+            </summary>
+      <param name="value">The max value.</param>
+      <returns>BinarizeFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Median">
+      <summary>
+            The median filter run through each element of the image and replace each pixel with the median of its neighboring pixels.
+            </summary>
+      <returns>MedianFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDenoising">
+      <summary>
+            Enables the use of an additional neural network to improve the image - reduce noise.
+            Useful for images with scan artifacts, distortion, spots, flares, gradients, foreign elements.
+            </summary>
+      <returns>AutoDenoisingFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoSkew">
+      <summary>
+            Enables the automatic image skew correction.
+            </summary>
+      <returns>AutoSkewFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDewarping">
+      <summary>
+            Automatically corrects geometric distortions in the image.
+            Extremely resource intensive!
+            </summary>
+      <returns>AutoDewarpingFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.ContrastCorrectionFilter">
+      <summary>
+            Contrast correction filter.
+            </summary>
+      <returns>ContrastCorrectionFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.GetEnumerator">
+      <summary>
+            For IEnumarable interface realization.
+            </summary>
+      <returns>IEnumerator</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter)">
+      <summary>
+            Add the new filter to the collection to further run all operations.
+            Consistency in the collection matters.
+            </summary>
+      <param name="filter">New operation to add to filter list.</param>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Binarize(Aspose.Drawing.Rectangle)">
+      <summary>
+            Converts a part of the image to black-and-white image.
+            Binary images are images whose pixels have only two possible intensity values. 
+            They are normally displayed as black and white. Numerically, the two values are often 0 for black, and 255 for white.
+            Binary images are produced by auto thresholding an image.
+            </summary>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>BinarizeFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Dilate(Aspose.Drawing.Rectangle)">
+      <summary>
+            Dilation adds pixels to the boundaries of objects in a part of the image.
+            </summary>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>DilateFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Invert(Aspose.Drawing.Rectangle)">
+      <summary>
+            Automatically inverts colors in a part of the image.
+            </summary>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>InvertFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Rotate(System.Single,Aspose.Drawing.Rectangle)">
+      <summary>
+            Rotate a part of the image.
+            </summary>
+      <param name="angle">Angle of rotation.<value>From -360 to 360</value></param>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>RotateFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Threshold(System.Int32,Aspose.Drawing.Rectangle)">
+      <summary>
+            Create a binary part of the image based on setting a threshold value on the pixel intensity of the original image part.
+            </summary>
+      <param name="value">The max value.</param>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>BinarizeFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Median(Aspose.Drawing.Rectangle)">
+      <summary>
+            The median filter run through each element of the image part and replace each pixel with the median of its neighboring pixels.
+            </summary>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>MedianFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDenoising(Aspose.Drawing.Rectangle)">
+      <summary>
+            Enables the use of an additional neural network to improve the image part - reduce noise.
+            Useful for images with scan artifacts, distortion, spots, flares, gradients, foreign elements.
+            </summary>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>AutoDenoisingFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoSkew(Aspose.Drawing.Rectangle)">
+      <summary>
+            Enables the automatic image part skew correction.
+            </summary>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>AutoSkewFilter object.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.ContrastCorrectionFilter(Aspose.Drawing.Rectangle)">
+      <summary>
+            Contrast correction filter for the part of the image.
+            </summary>
+      <param name="area">Coordinates of the part of the image to be corrected.</param>
+      <returns>ContrastCorrectionFilter object.</returns>
+    </member>
+    <member name="T:Aspose.OCR.DefectType">
+      <summary>
+            The types of image defects.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectType.SALT_PEPPER_NOISE">
+      <summary>
+            Random white and black pixels scattered across the area. Often occurs in digital photographs.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectType.LOW_CONTRAST">
+      <summary>
+            Highlights and shadows typically appearing on curved pages.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectType.BLUR">
+      <summary>
+            The image is out of focus. This detection algorithm can only identify the entire image as blurry. Specific areas cannot be detected.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectType.GLARE">
+      <summary>
+            Areas in an image caused by uneven lighting, such as spot lights or flash.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectType.ALL">
+      <summary>
+            All supported image defects.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.DetectAreasMode">
+      <summary>
+            Determines the type of neural network used for areas detection.
+            </summary>
+      <remarks>
+            Used in the <see cref="T:Aspose.OCR.RecognitionSettings" /> to specify which type of image you want to recognize.
+            </remarks>
+    </member>
+    <member name="F:Aspose.OCR.DetectAreasMode.NONE">
+      <summary>
+            Doesn't detect paragraphs.
+            Better for a simple one-column document without pictures.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DetectAreasMode.DOCUMENT">
+      <summary>
+            Detects paragraphs uses NN model for documents. 
+            Better for multicolumn document, document with pictures or with other not text objects.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DetectAreasMode.PHOTO">
+      <summary>
+            Detects paragraphs uses NN model for photos. 
+            Better for image with a lot of pictures and other not text objects.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DetectAreasMode.COMBINE">
+      <summary>
+            Detects paragraphs with text and then uses other NN model to detect areas inside of paragraphs.
+            Better for images with complex structure.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DetectAreasMode.TABLE">
+      <summary>
+            Detects cells with text.
+            Preferable mode for images with table structure.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DetectAreasMode.CURVED_TEXT">
+      <summary>
+            Detects lines and recognizes text on curved images.
+            Preferred mode for photos of book and magazine pages.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DetectAreasMode.TEXT_IN_WILD">
+      <summary>
+            A super-powerful neural network specialized in extracting words from low-quality images such as street photos, license plates, passport photos, meter photos, and photos with noisy backgrounds.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.Language">
+      <summary>
+            Languages used for OCR.
+            ISO 939-3 Code.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.ExtLatin">
+      <summary> Multi-language (latin alphabet + diacritic) support </summary>    //1
+        </member>
+    <member name="F:Aspose.OCR.Language.Latin">
+      <summary>Latin  alphabet </summary>    //2
+        </member>
+    <member name="F:Aspose.OCR.Language.Cyrillic">
+      <summary> Multi-language (cyrillic  alphabet) support </summary>    //3
+        </member>
+    <member name="F:Aspose.OCR.Language.Eng">
+      <summary> English alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Deu">
+      <summary> German alphabet </summary>        //5
+        </member>
+    <member name="F:Aspose.OCR.Language.Por">
+      <summary> Portuguese alphabet </summary>    //6
+        </member>
+    <member name="F:Aspose.OCR.Language.Spa">
+      <summary> Spanish alphabet </summary>       //7
+        </member>
+    <member name="F:Aspose.OCR.Language.Fra">
+      <summary> French alphabet </summary>        //8
+        </member>
+    <member name="F:Aspose.OCR.Language.Ita">
+      <summary> Italian alphabet </summary>       //9
+        </member>
+    <member name="F:Aspose.OCR.Language.Ces">
+      <summary> Czech alphabet </summary>         //10
+        </member>
+    <member name="F:Aspose.OCR.Language.Cze">
+      <summary> Czech alphabet </summary>         //10
+        </member>
+    <member name="F:Aspose.OCR.Language.Dan">
+      <summary> Danish alphabet </summary>        //11
+        </member>
+    <member name="F:Aspose.OCR.Language.Dum">
+      <summary> Dutch alphabet </summary>         //12
+        </member>
+    <member name="F:Aspose.OCR.Language.Nld">
+      <summary> Dutch alphabet </summary>         //12
+        </member>
+    <member name="F:Aspose.OCR.Language.Est">
+      <summary> Estonian alphabet </summary>      //13
+        </member>
+    <member name="F:Aspose.OCR.Language.Fin">
+      <summary> Finnish alphabet </summary>       //14
+        </member>
+    <member name="F:Aspose.OCR.Language.Lav">
+      <summary> Latvian alphabet </summary>       //15
+        </member>
+    <member name="F:Aspose.OCR.Language.Lit">
+      <summary> Lithuanian alphabet </summary>    //16
+        </member>
+    <member name="F:Aspose.OCR.Language.Nor">
+      <summary> Norwegian alphabet </summary>     //17
+        </member>
+    <member name="F:Aspose.OCR.Language.Pol">
+      <summary> Polish alphabet </summary>        //18
+        </member>
+    <member name="F:Aspose.OCR.Language.Rum">
+      <summary> Romanian alphabet </summary>      //19
+        </member>
+    <member name="F:Aspose.OCR.Language.Ron">
+      <summary> Romanian alphabet </summary>      //19
+        </member>
+    <member name="F:Aspose.OCR.Language.Hbs">
+      <summary> Serbo-Croatian alphabet </summary>//20        // Hbs
+        </member>
+    <member name="F:Aspose.OCR.Language.Slk">
+      <summary> Slovak alphabet </summary>        //21
+        </member>
+    <member name="F:Aspose.OCR.Language.Slv">
+      <summary> Slovene alphabet </summary>       //22
+        </member>
+    <member name="F:Aspose.OCR.Language.Swe">
+      <summary> Swedish alphabet </summary>       //23
+        </member>
+    <member name="F:Aspose.OCR.Language.Chi">
+      <summary> Chinese alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bel">
+      <summary> Belorussian alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bul">
+      <summary> Bulgarian alphabet </summary>     //25
+        </member>
+    <member name="F:Aspose.OCR.Language.Kaz">
+      <summary> Kazakh alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Rus">
+      <summary> Russian alphabet</summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Srp">
+      <summary> Serbian alphabet </summary>               // Hbs
+        </member>
+    <member name="F:Aspose.OCR.Language.Ukr">
+      <summary> Ukrainian alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Hin">
+      <summary> Hindi alphabet </summary>         //30
+        </member>
+    <member name="F:Aspose.OCR.Language.Cmn">
+            NEW in 2024 
+            <summary> Mandarin (Chinese) alphabet </summary></member>
+    <member name="F:Aspose.OCR.Language.Ind">
+      <summary> Indonesian alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Wuu">
+      <summary> Changzhou alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Vie">
+      <summary> Vietnamese alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mar">
+      <summary> Marathi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Tur">
+      <summary> Turkish alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Yue">
+      <summary> Cantonese alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Nan">
+      <summary> Min Nan alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mly">
+      <summary> Malay (Melayu) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Hau">
+      <summary> Hausa alphabet </summary>         //40
+        </member>
+    <member name="F:Aspose.OCR.Language.Hsn">
+      <summary> Xiang alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Sun">
+      <summary> Sundanese (Sunda) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Swh">
+      <summary> Swahili alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Hak">
+      <summary> Hakka alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bho">
+      <summary> Bhojpuri alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mai">
+      <summary> Maithili alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Tgl">
+      <summary> Tagalog (Pilipino) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Yor">
+      <summary> Yoruba alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Gax">
+      <summary> Oromo alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Ceb">
+      <summary> Cebuano alphabet </summary>       //50
+        </member>
+    <member name="F:Aspose.OCR.Language.Awa">
+      <summary> Awadhi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Azb">
+      <summary> Azerbaijani (Azeri) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Gan">
+      <summary> Gan alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Kmr">
+      <summary> Kurdish (Kurmanji) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bos">
+      <summary> Bosnian alphabet </summary>     //  55              // Hbs
+        </member>
+    <member name="F:Aspose.OCR.Language.Hrv">
+      <summary> Croatian alphabet </summary>     //                // Hbs
+        </member>
+    <member name="F:Aspose.OCR.Language.Bhr">
+      <summary> Malagasy alphabet </summary>      //
+        </member>
+    <member name="F:Aspose.OCR.Language.Nep">
+      <summary> Nepali alphabet </summary>        //
+        </member>
+    <member name="F:Aspose.OCR.Language.Ccx">
+      <summary> Zhuang alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Tuk">
+      <summary> Turkmen alphabet </summary>      //60
+        </member>
+    <member name="F:Aspose.OCR.Language.Som">
+      <summary> Somali alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Rwr">
+      <summary> Marwari alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mag">
+      <summary> Magahi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bgc">
+      <summary> Haryanvi alphabet </summary>      //65
+        </member>
+    <member name="F:Aspose.OCR.Language.Hun">
+      <summary> Hungarian (Magyar) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Hne">
+      <summary> Chattisgarhi (Laria, Khaltahi) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Nya">
+      <summary> Chichewa (Chewa, Nyanja) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Kin">
+      <summary> Rwanda alphabet </summary>            //
+        </member>
+    <member name="F:Aspose.OCR.Language.Mnp">
+      <summary> Min Bei alphabet </summary>           //70
+        </member>
+    <member name="F:Aspose.OCR.Language.Zul">
+      <summary> Zulu alphabet </summary>              //
+        </member>
+    <member name="F:Aspose.OCR.Language.Dhd">
+      <summary> Dhundari alphabet </summary>          //
+        </member>
+    <member name="F:Aspose.OCR.Language.Ilo">
+      <summary> Ilocano alphabet </summary>           //
+        </member>
+    <member name="F:Aspose.OCR.Language.Cdo">
+      <summary> Min Dong alphabet </summary>          //
+        </member>
+    <member name="F:Aspose.OCR.Language.Qxa">
+      <summary> Quechua alphabet </summary>           //75
+        </member>
+    <member name="F:Aspose.OCR.Language.Hil">
+      <summary> Hiligaynon alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Hmn">
+      <summary> Hmong alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Sna">
+      <summary> Shona (Karanga) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Knn">
+      <summary> Konkani alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Xho">
+      <summary> Xhosa alphabet </summary>             //80
+        </member>
+    <member name="F:Aspose.OCR.Language.Bew">
+      <summary> Betawi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bjj">
+      <summary> Kanauji alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Aln">
+      <summary> Albanian alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Cat">
+      <summary> Catalan alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Afr">
+      <summary> Afrikaans alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Min">
+      <summary> Minangkabau alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Sot">
+      <summary> Sotho (Southern) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bcl">
+      <summary> Bikol alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Wtm">
+      <summary> Mewati alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Vmw">
+      <summary> Makua (Makhuwa) alphabet </summary>   //90
+        </member>
+    <member name="F:Aspose.OCR.Language.Knc">
+      <summary> Kanuri alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Tsn">
+      <summary> Tswana alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Kon">
+      <summary> Kikongo alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Luo">
+      <summary> Luo alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Suk">
+      <summary> Sukuma alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Tso">
+      <summary> Tsonga alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Bem">
+      <summary> Bemba (Chibemba) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Kln">
+      <summary> Nandi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Plm">
+      <summary> Palembang alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Umb">
+      <summary> Umbundu alphabet </summary>           //100
+        </member>
+    <member name="F:Aspose.OCR.Language.Nso">
+      <summary> Sotho (Northern) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.War">
+      <summary> Waray-Waray alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Rjb">
+      <summary> Rajbanshi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Gbm">
+      <summary> Garhwali alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Lmn">
+      <summary> Lamani (Lambadi) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Nds">
+      <summary> Low German alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Glk">
+      <summary> Gilaki alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mui">
+      <summary> Musi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Cpx">
+      <summary> Pu-Xian alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Pam">
+      <summary> Kapampangan alphabet </summary>       //110
+        </member>
+    <member name="F:Aspose.OCR.Language.Pcc">
+      <summary> Bouyei (Buyi, Giáy) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Kfy">
+      <summary> Kumauni alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Glg">
+      <summary> Galician alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Nbl">
+      <summary> Ndebele alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Yao">
+      <summary> Yao alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Sas">
+      <summary> Sasak alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Ssw">
+      <summary> Swati (Swazi) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Guz">
+      <summary> Gusii alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mer">
+      <summary> Meru alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Wbr">
+      <summary> Wagdi alphabet </summary>    	        //120
+        </member>
+    <member name="F:Aspose.OCR.Language.Wal">
+      <summary> Wolaytta alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Doc">
+      <summary> Dong alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Pag">
+      <summary> Pangasinan alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Diq">
+      <summary> Dimli alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mak">
+      <summary> Makassar (Makasar) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Tum">
+      <summary> Tumbuka alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Srr">
+      <summary> Serer-Sine alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Lnc">
+      <summary> Occitan alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Che">
+      <summary> Chechen alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Toi">
+      <summary> Tonga alphabet </summary>    	        //130
+        </member>
+    <member name="F:Aspose.OCR.Language.Mtq">
+      <summary> Muong alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Quc">
+      <summary> K'iche' alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mup">
+      <summary> Malvi alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Mtr">
+      <summary> Mewari alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Kbd">
+      <summary> Kabardian alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Ruf">
+      <summary> Luguru alphabet </summary>        //136	    
+        </member>
+    <member name="F:Aspose.OCR.Language.Srp_hrv">
+      <summary> Serbo-Croatian alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.None">
+      <summary>  Multi-language (latin alphabet + diacritic) support </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Ara">
+      <summary> Arabic alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Pes">
+      <summary> Persian (Farsi) alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Urd">
+      <summary> Urdu alphabet </summary>
+    </member>
+    <member name="F:Aspose.OCR.Language.Uig">
+      <summary> Uyghur alphabet </summary>
+    </member>
+    <member name="T:Aspose.OCR.PixelType">
+      <summary>
+            Determines the type of the pixel data for image recognition.
+            </summary>
+      <remarks>
+            Used in the <see cref="!:AsposeOcr.RecognizeImage(byte[], int, int, PixelType, RecognitionSettings)" /> to set the sequences of bytes in the data array.
+            </remarks>
+    </member>
+    <member name="F:Aspose.OCR.PixelType.BYTE">
+      <summary>
+            Sets type as 1 bit per pixel.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.PixelType.RGB">
+      <summary>
+            Sets type as rgb.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.PixelType.RGBA">
+      <summary>
+            Sets type as argb.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.PixelType.BGR">
+      <summary>
+            Sets type as bgr.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.RecognitionResult">
+      <summary>
+            The results of the image recognition.
+            Contains elements with recognition information and methods for result export.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.RecognitionResult.LinesResult">
+      <summary>
+            Recognized text from row with row coordinates.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.LinesResult.TextInLine">
+      <summary>
+            Recognized text from row.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.LinesResult.Line">
+      <summary>
+            Row coordinates.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.LinesResult.#ctor">
+      <summary>
+            Constructor for LinesResult object.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.RecognitionLinesResult">
+      <summary>
+            Gets a list of recognition results with a list of rows (Rectangles).
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.RecognitionAreasText">
+      <summary>
+            Gets list recognition results of a list of areas (Rectangles).
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.RecognitionAreasRectangles">
+      <summary>
+            Gets rectangles coordinates.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.RecognitionCharactersList">
+      <summary>
+             A set of characters found by the recognition algorithm and arranged in descending order of probability.
+             </summary>
+      <remarks>The array of symbols <see cref="T:System.Char" /> with the maximum probability and alternatives.</remarks>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.RecognitionText">
+      <summary>
+            Gets recognition result in one string.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.FileName">
+      <summary>
+            Full path to the file.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.GetSpellCheckCorrectedText(Aspose.OCR.SpellChecker.SpellCheckLanguage,System.String)">
+      <summary>
+            Corrects text (replaces misspelled words).
+            </summary>
+      <param name="language">Dictionary to use.</param>
+      <param name="dictionaryPath">Optionally. Full path to the user dictionary (frequency dictionary). 
+            Dictionary file format:
+            Plain text file in UTF-8 encoding.
+            Word and Word Frequency are separated by space or tab.Per default, the word is expected in the first column and the frequency in the second column.
+            Every word-frequency-pair in a separate line.A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), 
+            or a carriage return immediately followed by a line feed("\r\n").
+            Every word is expected to be in lower case.
+            </param>
+      <returns>Text with replaced words.</returns>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.GetSpellCheckErrorList(Aspose.OCR.SpellChecker.SpellCheckLanguage,System.String)">
+      <summary>
+            Find the misspelled words with suggested spellings for a given input text.
+            </summary>
+      <param name="language">Dictionary to use.</param>
+      <param name="dictionaryPath">Optionally. Full path to the user dictionary (frequency dictionary). 
+            Dictionary file format:
+            Plain text file in UTF-8 encoding.
+            Word and Word Frequency are separated by space or tab.Per default, the word is expected in the first column and the frequency in the second column.
+            Every word-frequency-pair in a separate line.A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), 
+            or a carriage return immediately followed by a line feed("\r\n").
+            Every word is expected to be in lower case.
+            </param>
+      <returns>A list of SpellCheckError object representing misspelled words with lists suggested correct spellings for the each misspelled word, 
+            and with the edit distance.</returns>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.Skew">
+      <summary>
+            Gets skew angle.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.Warnings">
+      <summary>
+            Gets list of the warning messages describing non-critical faults appeared during generation.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionResult.Image">
+      <summary>
+            Gets or sets image for pdf creation.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.GetJson(System.Boolean)">
+      <summary>
+             Form JSON string with recognition results. 
+            </summary>
+      <param name="isReadable">Determines whether json will be human readable.</param>
+      <returns>Recognition results as JSON string.</returns>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.GetXml">
+      <summary>
+            Form XML string with recognition results.
+            </summary>
+      <returns>Recognition results as a string XML serialized.</returns>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.GetKeywords">
+      <summary>
+            Get keywords from pasport (Test mode. Works only for USA and MADAGASCAR passports).
+            </summary>
+      <returns>Dictionary with keyword as a key and LinesResult as a value.</returns>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.Save(System.String,Aspose.OCR.SaveFormat,System.Boolean,Aspose.OCR.SpellChecker.SpellCheckLanguage,System.String,System.String)">
+      <summary>
+            Saves the document as the plain text, PDF or Microsoft Word Document.
+            </summary>
+      <param name="fullFileName">Filename with a path for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf, Xlsx, Rtf, Json, Xml).</param>
+      <param name="applySpellingCorrection">Set true to correct misspelled words in case you have such in your recognition result.</param>
+      <param name="language">Dictionary for spell check (optional).</param>
+      <param name="dictionaryPath">Optionally. Full path to the user dictionary in .txt format. Format is [word - space - frequence(number)].
+            Example: the 23135851162\nthat 3400031103\n</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.Save(System.String,Aspose.OCR.SaveFormat,System.String)">
+      <summary>
+            Saves the document as the plain text, PDF or Microsoft Word Document.
+            </summary>
+      <param name="fullFileName">Filename with a path for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf, Xlsx, Rtf, Json, Xml).</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.Save(System.IO.MemoryStream,Aspose.OCR.SaveFormat,System.Boolean,Aspose.OCR.SpellChecker.SpellCheckLanguage,System.String,System.String)">
+      <summary>
+            Saves the document as the plain text, PDF or Microsoft Word Document.
+            </summary>
+      <param name="stream">MemoryStream for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf).</param>
+      <param name="applySpellingCorrection">Set true to correct misspelled words in case you have such in your recognition result.</param>
+      <param name="language">Dictionary for spell check (optional).</param>
+      <param name="dictionaryPath">Optionally. Full path to the user dictionary in .txt format. Format is [word - space - frequence(number)].
+            Example: the 23135851162\nthat 3400031103\n</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.Save(System.IO.MemoryStream,Aspose.OCR.SaveFormat,System.String)">
+      <summary>
+            Saves the document as the plain text, PDF or Microsoft Word Document.
+            </summary>
+      <param name="stream">MemoryStream for saving recognition result in the selected format.</param>
+      <param name="saveFormat">Document format (Docx, Txt, Pdf).</param>
+      <param name="embeddedFontPath">Optionally. Full path to the user font.</param>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionResult.op_Addition(Aspose.OCR.RecognitionResult,Aspose.OCR.RecognitionResult)">
+      <summary>
+            To complete the full result from recognized fragments (lines).
+            </summary>
+      <param name="main">The object to which the right operand will be added.</param>
+      <param name="part">Right operand.</param>
+      <returns>Left operand.</returns>
+    </member>
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.FlatArray.Core.MemoryManagement.Mapping.MapperFactory" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Vector2D" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.ByteArray" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.FontInputStream" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.FontOutputStream" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.ReadableFontData" -->
+    <!-- Badly formed XML comment ignored for member "M:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.ReadableFontData.ComputeCheckSum(System.Int32,System.Int32)" -->
+    <!-- Badly formed XML comment ignored for member "M:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.Font.getTable(System.Int32)" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.CMap" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.SubTable.Builder" -->
+    <!-- Badly formed XML comment ignored for member "T:Aspose.OCR.Provider.Djvu.Foundation.Fonts.sfntly.TableBasedTableBuilder" -->
+    <!-- Badly formed XML comment ignored for member "M:Aspose.OCR.Provider.MeanShiftNamespace.MeanShift.Learn(System.Double[][])" -->
+    <member name="T:Aspose.OCR.SaveFormat">
+      <summary>
+            For recognition result saving
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.Text">
+      <summary>
+            Saves the document in the plain text format.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.Docx">
+      <summary>
+            Saves the document as an Office Open XML WordprocessingML Document (macro-free).
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.Pdf">
+      <summary>
+            Saves the document as a Searchable PDF (Adobe Portable Document) Document.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.Xlsx">
+      <summary>
+            Saves the document as an Excel ( 2007 and later) workbook Document.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.Xml">
+      <summary>
+            Saves the document as an XML file.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.Json">
+      <summary>
+            Saves the document as an JSON file.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.HTML">
+      <summary>
+            Saves the document as an HTML file.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.EPUB">
+      <summary>
+            Saves the document as an EPUB file.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.RTF">
+      <summary>
+            Saves the document as an rtf file.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SaveFormat.PdfNoImg">
+      <summary>
+            Saves the document as a Searchable PDF (Adobe Portable Document) Document without image.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.BaseRecognitionSettings">
+      <summary>
+            Settings for the image recognition.
+            Contains elements that allow customizing the recognition process.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.BaseRecognitionSettings.#ctor(Aspose.OCR.Language)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.RecognitionSettings" /> class with full set of properties.
+            </summary>
+      <param name="language">Language used for OCR.</param>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.ThreadsCount">
+      <summary>
+            Gets or sets the number fo threads for processing.
+            <value>By default, 0 means that the image will be processed with the number of threads equal to your number of processors.
+            ThreadsCount = 1 means that the image will be processed in the main thread.</value></summary>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.Language">
+      <summary>
+            Gets or sets the language used for OCR.
+            <remarks>
+            Determines the alphabet used during recognition.
+            Multi-language by default. 
+            </remarks></summary>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.IgnoredSymbols">
+      <summary>
+            Sets blacklist for recognition symbols.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.AllowedSymbols">
+      <summary>
+             Set the allowed characters with alphabet property.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.LinesFiltration">
+      <summary>
+            Allows to recognize text in the tables (regions surrounded lines).
+            </summary>
+      <value>
+        <c>false</c> allows increase performance and don't detect tables and remove lines; otherwise <c>true</c>. The default is <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.AllowedCharacters">
+      <summary>
+            Allowed characters set. Determines the type of characters allowed for recognition result.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.DetectAreasMode">
+      <summary>
+            Allows to select the optimal mode for document type areas: document, photo, plain text, column, image.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.AutomaticColorInversion">
+      <summary>
+            Detect images with white text on dark/black background and automatically choose a special OCR algorithm for them.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.BaseRecognitionSettings.UpscaleSmallFont">
+      <summary>
+            Allows you to use additional algorithms specifically for small font recognition.
+            Useful for images with small size characters.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.CarPlateRecognitionSettings">
+      <summary>
+            Settings for the car number recognition.
+            Contains elements that allow customizing the recognition process.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.CarPlateRecognitionSettings.#ctor(Aspose.OCR.Language)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.CarPlateRecognitionSettings" /> class with full set of properties.
+            </summary>
+      <param name="language">Language used for OCR.</param>
+    </member>
+    <member name="M:Aspose.OCR.CarPlateRecognitionSettings.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.CarPlateRecognitionSettings" /> class with default set of properties.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.CarPlateRecognitionSettings.Language">
+      <summary>
+            Gets or sets the language used for OCR.
+            <remarks>
+            Determines the alphabet used during recognition.
+            Multi-language by default. 
+            </remarks></summary>
+    </member>
+    <member name="P:Aspose.OCR.CarPlateRecognitionSettings.IgnoredSymbols">
+      <summary>
+            Sets blacklist for recognition symbols.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.CarPlateRecognitionSettings.AllowedSymbols">
+      <summary>
+             Set the allowed characters with alphabet property.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.CarPlateRecognitionSettings.AllowedCharacters">
+      <summary>
+            Allowed characters set. Determines the type of characters allowed for recognition result.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.CarPlateRecognitionSettings.AutomaticColorInversion">
+      <summary>
+            Detect images with white text on dark/black background and automatically choose a special OCR algorithm for them.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.IDCardRecognitionSettings">
+      <summary>
+            Settings for the ID Card recognition.
+            Contains elements that allow customizing the recognition process.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.IDCardRecognitionSettings.#ctor(Aspose.OCR.Language)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.IDCardRecognitionSettings" /> class with full set of properties.
+            </summary>
+      <param name="language">Language used for OCR.</param>
+    </member>
+    <member name="M:Aspose.OCR.IDCardRecognitionSettings.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.IDCardRecognitionSettings" /> class with default set of properties.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.InvoiceRecognitionSettings">
+      <summary>
+            Settings for the invoice recognition.
+            Contains elements that allow customizing the recognition process.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.InvoiceRecognitionSettings.#ctor(Aspose.OCR.Language)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.InvoiceRecognitionSettings" /> class with full set of properties.
+            </summary>
+      <param name="language">Language used for OCR.</param>
+    </member>
+    <member name="M:Aspose.OCR.InvoiceRecognitionSettings.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.InvoiceRecognitionSettings" /> class with default set of properties.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.Logging">
+      <summary>
+            Class to create log configurations. 
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Logging.LoggingLevel">
+      <summary>
+            Set or get log level
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Logging.Console">
+      <summary>
+            Set or get - the logs are displayed on the console.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Logging.FileSystem">
+      <summary>
+            Set or get - the logs are saved in the file (default path "Aspose.OCR.log.txt").
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Logging.LogFilePath">
+      <summary>
+            Set or get the path and name of log file.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.LoggingLevel">
+      <summary>
+            Defines the type of logs to display.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.LoggingLevel.Debug">
+      <summary>
+            All logs will be displayed.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.LoggingLevel.Warning">
+      <summary>
+            Some not critical points and all errors will be displayed.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.LoggingLevel.Error">
+      <summary>
+            Only errors will be displayed.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.LoggingLevel.None">
+      <summary>
+            Disable logging (default).
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.Country">
+      <summary>
+            For better passport recognition point the passport country.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Country.UNIVERSAL">
+      <summary>
+            Do not parse the recognized text.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Country.USA">
+      <summary>
+            Extract key details from US passport image.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Country.MADAGASCAR">
+      <summary>
+            Extract key details from Malagasy passport image.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Country.NONE">
+      <summary>
+            Do not parse the recognized text.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.PassportRecognitionSettings">
+      <summary>
+            Settings for the passport recognition.
+            Contains elements that allow customizing the recognition process.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.PassportRecognitionSettings.#ctor(Aspose.OCR.Language)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.PassportRecognitionSettings" /> class with full set of properties.
+            </summary>
+      <param name="language">Language used for OCR.</param>
+    </member>
+    <member name="M:Aspose.OCR.PassportRecognitionSettings.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.PassportRecognitionSettings" /> class with default set of properties.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.PassportRecognitionSettings.Country">
+      <summary>
+            Set the template for passport recognition and to extract the keywords.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.ReceiptRecognitionSettings">
+      <summary>
+            Settings for the receipt recognition.
+            Contains elements that allow customizing the recognition process.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.ReceiptRecognitionSettings.#ctor(Aspose.OCR.Language)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.ReceiptRecognitionSettings" /> class with full set of properties.
+            </summary>
+      <param name="language">Language used for OCR.</param>
+    </member>
+    <member name="M:Aspose.OCR.ReceiptRecognitionSettings.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.ReceiptRecognitionSettings" /> class with default set of properties.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.ReceiptRecognitionSettings.ThreadsCount">
+      <summary>
+            Gets or sets the number fo threads for processing.
+            <value>By default, 0 means that the image will be processed with the number of threads equal to your number of processors.
+            ThreadsCount = 1 means that the image will be processed in the main thread.</value></summary>
+    </member>
+    <member name="P:Aspose.OCR.ReceiptRecognitionSettings.Language">
+      <summary>
+            Gets or sets the language used for OCR.
+            <remarks>
+            Determines the alphabet used during recognition.
+            Multi-language by default. 
+            </remarks></summary>
+    </member>
+    <member name="P:Aspose.OCR.ReceiptRecognitionSettings.IgnoredSymbols">
+      <summary>
+            Sets blacklist for recognition symbols.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.ReceiptRecognitionSettings.AllowedCharacters">
+      <summary>
+            Allowed characters set. Determines the type of characters allowed for recognition result.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.ReceiptRecognitionSettings.AutomaticColorInversion">
+      <summary>
+            Detect images with white text on dark/black background and automatically choose a special OCR algorithm for them.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.RecognitionSettings">
+      <summary>
+            Settings for the image recognition.
+            Contains elements that allow customizing the recognition process.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionSettings.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.RecognitionSettings" /> class with auto skew = true.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.RecognitionSettings.#ctor(Aspose.OCR.Language,System.Collections.Generic.List{Aspose.Drawing.Rectangle},System.Boolean)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.RecognitionSettings" /> class with full set of properties.
+            </summary>
+      <param name="language">Language used for OCR.</param>
+      <param name="recognitionAreas">Manually set areas for recognition. Null by default - means whole image is processed.</param>
+      <param name="recognizeSingleLine">For single-line images</param>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionSettings.RecognitionAreas">
+      <summary>
+             Gets or sets the list of text areas for processing.
+            <remarks>
+             Allows to manually specify the areas with text for more accurate recognition.
+             </remarks> 
+             Disables AutoSkew.
+             </summary>
+    </member>
+    <member name="P:Aspose.OCR.RecognitionSettings.RecognizeSingleLine">
+      <summary>
+            Sets single-line image recognition. 
+            Disabled (false) by default. 
+            Disable all the processing steps associated with splitting into lines. 
+            Set this parameter to true if your image contains only one line. Disables RecognitionAreas settings, so all areas settings will be ignored.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.SpellChecker.SpellCheckError">
+      <summary>
+            Representing misspelled word with additional data.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.SpellChecker.SpellCheckError.Word">
+      <summary>
+            The word being misspelled.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.SpellChecker.SpellCheckError.StartPosition">
+      <summary>
+            Word's position in the input text.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.SpellChecker.SpellCheckError.Length">
+      <summary>
+            Msspelled word's length in the input text.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.SpellChecker.SpellCheckError.SuggestedWords">
+      <summary>
+            list of objects with suggested correct spellings
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.SpellChecker.SuggestedWord">
+      <summary>
+            Spelling suggestion returned from GetSpellCheckErrorList.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.SpellChecker.SuggestedWord.Word">
+      <summary>
+            The suggested correctly spelled word.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.SpellChecker.SuggestedWord.Distance">
+      <summary>
+            The distance between the searched and suggestion.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.SpellChecker.SpellCheckLanguage">
+      <summary>
+            Languages used for SpellCheck (existing dictionaries).
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng">
+      <summary> English dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Deu">
+      <summary> German dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Spa">
+      <summary> Spanish dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Fra">
+      <summary> French dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Ita">
+      <summary> Italian dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Por">
+      <summary> Portuguese dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Cze">
+      <summary> Czech dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Dan">
+      <summary> Danish dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Dum">
+      <summary> Dutch dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Est">
+      <summary> Estonian dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Fin">
+      <summary> Finnish dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Lav">
+      <summary> Latvian dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Lit">
+      <summary> Lithuanian dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Pol">
+      <summary> Polish dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Rum">
+      <summary> Romanian dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Slk">
+      <summary> Slovak dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Slv">
+      <summary> Slovene dictionary </summary>
+    </member>
+    <member name="F:Aspose.OCR.SpellChecker.SpellCheckLanguage.Swe">
+      <summary> Swedish dictionary </summary>
+    </member>
+    <member name="T:Aspose.OCR.ImageData">
+      <summary>
+            Information about processed / recognized image.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.ImageData.Source">
+      <summary>
+            The full path to the file or URL, if any. Empty for streams, byte arrays, base64.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.ImageData.Type">
+      <summary>
+            The type of the ImageData content.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.ImageData.Width">
+      <summary>
+            Width of the image.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.ImageData.Height">
+      <summary>
+            Height of the image.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.ImageData.Filters">
+      <summary>
+            Image preprocessing to improve the accuracy of OCR.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.ImageData.Stream">
+      <summary>
+            Image in stream.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.ImageProcessing">
+      <summary>
+            Helper class for Aspose OCR library. Allows to preprocess and save images.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.ImageProcessing.Save(Aspose.OCR.OcrInput,System.String)">
+      <summary>
+            Use image processing to improve the accuracy of OCR.
+            Create a list of filters that will be applied to the input image in the order you specify.
+            Example to create filters:
+            PreprocessingFilter filters = new PreprocessingFilter
+               {
+                   PreprocessingFilter.Invert(),
+                   PreprocessingFilter.Threshold(150),
+                   PreprocessingFilter.Binarize(),
+                   PreprocessingFilter.Rotate(180),
+                   PreprocessingFilter.Resize(3000,3000, Aspose.OCR.Filters.InterpolationFilterType.Box),
+                   PreprocessingFilter.Scale(6f),
+                   PreprocessingFilter.Dilate()
+            };
+            You don't need all of them. Set only what you need.
+            </summary>
+      <param name="images">OcrInput object containing different images <see cref="T:Aspose.OCR.OcrInput" />.</param>
+      <param name="folderPath">Path without image names for saving processed images.</param>
+      <returns>OcrInput object containing result processed images <see cref="T:Aspose.OCR.OcrInput" />.</returns>
+    </member>
+    <member name="M:Aspose.OCR.ImageProcessing.Render(Aspose.OCR.OcrInput)">
+      <summary>
+            Use image processing to improve the accuracy of OCR.
+            Create a list of filters that will be applied to the input image in the order you specify.
+            example to create filters:
+            PreprocessingFilter filters = new PreprocessingFilter
+               {
+                   PreprocessingFilter.Invert(),
+                   PreprocessingFilter.Threshold(150),
+                   PreprocessingFilter.Binarize(),
+                   PreprocessingFilter.Rotate(180),
+                   PreprocessingFilter.Resize(3000,3000, Aspose.OCR.Filters.InterpolationFilterType.Box),
+                   PreprocessingFilter.Scale(6f),
+                   PreprocessingFilter.Dilate()
+            };
+            You don't need all of them. Set only what you need.
+            </summary>
+      <param name="images">OcrInput object containing different images <see cref="T:Aspose.OCR.OcrInput" />.</param>
+      <returns>OcrInput object containing result processed images in stream field.<see cref="T:Aspose.OCR.OcrInput" />.</returns>
+    </member>
+    <member name="T:Aspose.OCR.InputType">
+      <summary>
+            Types of image/ documents for processing / recognition.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.SingleImage">
+      <summary>
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF, MemoryStream, byte arrays.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.PDF">
+      <summary>
+            Scanned PDF document from file or from MemoryStream.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.TIFF">
+      <summary>
+            Multipage TIFF, TIF document from file or from MemoryStream.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.DJVU">
+      <summary>
+            Multipage DJVU document from file or from MemoryStream.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.URL">
+      <summary>
+            Link on the image. Supports GIF, PNG, JPEG, BMP, TIFF, JFIF.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.Directory">
+      <summary>
+            Path to the directory. Nested archives and folders are not supported.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF.
+            Default amount of processed images is all.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.Zip">
+      <summary>
+            Full name of the ZIP archive. Nested archives and folders are not supported.
+            Supports GIF, PNG, JPEG, BMP, TIFF, JFIF.
+            Default amount of processed images is all.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.InputType.Base64">
+      <summary>
+            base64 string with the image or path to the .txt file with the base64 content. Supports GIF, PNG, JPEG, BMP, TIFF, JFIF.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.SkewOutput">
+      <summary>
+            Data about skew angle in degrees and name of the file.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SkewOutput.Source">
+      <summary>
+             The full path to the file or URL, if any. Empty for streams, byte arrays, base64.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SkewOutput.Page">
+      <summary>
+            Page number.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SkewOutput.ImageIndex">
+      <summary>
+            Sequence number of the image on the page.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.SkewOutput.Angle">
+      <summary>
+            Skew angle in degrees.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.DefectOutput">
+      <summary>
+            Areas containing defects identified in the image.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectOutput.Source">
+      <summary>
+             The full path to the file or URL, if any. Empty for streams, byte arrays, and Base64 encoded files.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectOutput.Page">
+      <summary>
+            Page number.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectOutput.defectAreas">
+      <summary>
+            The list of image defects and areas where they were found.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.DefectAreas">
+      <summary>
+            Image areas containing a certain type of defect.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectAreas.defectType">
+      <summary>
+            Defect type.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.DefectAreas.rectangles">
+      <summary>
+            Image areas where defect was found
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.RectangleOutput">
+      <summary>
+            Data about detected text areas or lines.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.RectangleOutput.Source">
+      <summary>
+            The full path to the file or URL, if any. Empty for streams, byte arrays, base64.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.RectangleOutput.Page">
+      <summary>
+            Page number.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.RectangleOutput.ImageIndex">
+      <summary>
+            Sequence number of the image on the page.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.RectangleOutput.Rectangles">
+      <summary>
+            List of detected text areas or lines.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.Character">
+      <summary>
+            Data about detected character.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Character.Value">
+      <summary>
+            Detected character.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Character.Coordinates">
+      <summary>
+            Character coordinates.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.CharacterRecognitionResult">
+      <summary>
+            Pages with detected characters data.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.CharacterRecognitionResult.Source">
+      <summary>
+            The full path to the file or URL, if any. Empty for streams, byte arrays, base64.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.CharacterRecognitionResult.Page">
+      <summary>
+            Page number.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.CharacterRecognitionResult.ImageIndex">
+      <summary>
+            Sequence number of the image on the page.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.CharacterRecognitionResult.Characters">
+      <summary>
+            Data about detected characters on the page.
+            </summary>
+    </member>
+    <member name="T:Aspose.OCR.OcrInput">
+      <summary>
+            Container to collect all images / documents for preprocessing / recognition.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.#ctor(Aspose.OCR.InputType,Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter)">
+      <summary>
+            Constructor to create container and set the type of images/documents and filters for further preprocessing / recognition.
+            </summary>
+      <param name="type">Set the images/documents type will be added to container.</param>
+      <param name="filters">Set preprocessing filters will be applied for further processing or recognition.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.ReplaceFilters(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter)">
+      <summary>
+            Remove old filters and set new.
+            </summary>
+      <param name="filters">Set preprocessing filters will be applied for further processing or recognition.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.ClearFilters">
+      <summary>
+            Remove all filters.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Add(System.String)">
+      <summary>
+            Add the path or URI containing the image for recognition / processing.
+            The type of the image must correspond to the type specified in the constructor.
+            </summary>
+      <param name="fullPath">Path to the image/ document / folder / archive.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Add(System.IO.MemoryStream)">
+      <summary>
+            Add the memory stream containing the image for recognition / processing.
+            The type of the image must correspond to the type specified in the constructor.
+            </summary>
+      <param name="stream">Memory stream containing the image or document.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Add(System.String,System.Int32,System.Int32)">
+      <summary>
+            Add the multipage images / documents for recognition / processing.
+            The type of the image must correspond to the type specified in the constructor.
+            </summary>
+      <param name="fullPath">Path to the image/ document / folder / archive.</param>
+      <param name="startPage">The first page/image for processing / recognition. Use for documents, zip, folders.</param>
+      <param name="pagesCount">The total amount of pages/images for processing / recognition. Use for documents, zip, folders. Default = 1.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Add(System.IO.MemoryStream,System.Int32,System.Int32)">
+      <summary>
+            Add the memory stream containing the multipage image for recognition / processing.
+            The type of the image must correspond to the type specified in the constructor.
+            </summary>
+      <param name="stream">Memory stream containing the multipage document.</param>
+      <param name="startPage">The first page/image for processing / recognition. Use for documents.</param>
+      <param name="pagesCount">The total amount of pages/images for processing / recognition. Use for documents. Default = 1.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Add(System.Byte[],System.Int32,System.Int32,Aspose.OCR.PixelType)">
+      <summary>
+            Add the decoded image to the list for recognition / processing.
+            The type of the image must correspond to the type specified in the constructor (SingleImage).
+            </summary>
+      <param name="arr">Decoded image in Aspose.Drawing.Color array.</param>
+      <param name="width">Image width.</param>
+      <param name="height">Image height.</param>
+      <param name="pixelFormat">Supports byte, rgb, bgr, rgba.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Add(Aspose.Drawing.Color[],System.Int32,System.Int32)">
+      <summary>
+            Add the decoded image to the list for recognition / processing.
+            The type of the image must correspond to the type specified in the constructor (SingleImage).
+            </summary>
+      <param name="imageData">Decoded image in Aspose.Drawing.Color array.</param>
+      <param name="width">Image width.</param>
+      <param name="height">Image height.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.AddBase64(System.String)">
+      <summary>
+            Add the base64 string containing the image for recognition / processing.
+            The type of the image must correspond to the type specified in the constructor.
+            </summary>
+      <param name="base64">Base64 string with single image.</param>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Dispose">
+      <summary>
+            Set the amount of items for processing / recognition as 0.
+            Clear the collection.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Clear">
+      <summary>
+            Set the amount of items for processing / recognition as 0.
+            Clear the collection.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.Count">
+      <summary>
+            Amount of items for processing / recognition.
+            </summary>
+      <returns>Amount of items.</returns>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.GetInputType">
+      <summary>
+            Type of allowed images for recognition.
+            </summary>
+      <returns>InputType.</returns>
+    </member>
+    <member name="M:Aspose.OCR.OcrInput.GetEnumerator">
+      <summary>
+            Returns collection enumerator.
+            </summary>
+      <returns>The collection of <see cref="T:Aspose.OCR.ImageData" />.</returns>
+    </member>
+    <member name="P:Aspose.OCR.OcrInput.Item(System.Int32)">
+      <summary>
+            Returns information about processed / recognized image.
+            </summary>
+      <param name="index">Position of the image in the List.</param>
+      <returns>The object of <see cref="T:Aspose.OCR.ImageData" /></returns>
+    </member>
+    <member name="T:Aspose.OCR.Rectangle">
+      <summary>
+            Stores a set of four integers that represent the location and size of a rectangle.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Rectangle.height">
+      <summary>
+            The rectangle width.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Rectangle.width">
+      <summary>
+            The rectangle height.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Rectangle.x">
+      <summary>
+            The rectangle x location.
+            </summary>
+    </member>
+    <member name="F:Aspose.OCR.Rectangle.y">
+      <summary>
+            The rectangle y location.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.Rectangle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Aspose.OCR.Rectangle" /> structure with the specified location and size.
+            </summary>
+      <param name="x">The x-coordinate of the upper-left corner of the rectangle.</param>
+      <param name="y">The y-coordinate of the upper-left corner of the rectangle.</param>
+      <param name="width">The width of the rectangle.</param>
+      <param name="height">The height of the rectangle.</param>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Empty">
+      <summary>
+            Gets a new instance of the <see cref="T:Aspose.OCR.Rectangle" /> structure that has <see cref="P:Aspose.OCR.Rectangle.X" />, <see cref="P:Aspose.OCR.Rectangle.Y" />, <see cref="P:Aspose.OCR.Rectangle.Width" /> and <see cref="P:Aspose.OCR.Rectangle.Height" /> values set to zero.
+            </summary>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.X">
+      <summary>
+            Gets or sets the x-coordinate of the upper-left corner of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <value>The x-coordinate of the upper-left corner of this <see cref="T:Aspose.OCR.Rectangle" /> structure.</value>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Y">
+      <summary>
+            Gets or sets the y-coordinate of the upper-left corner of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <value>The y-coordinate of the upper-left corner of this <see cref="T:Aspose.OCR.Rectangle" /> structure.</value>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Width">
+      <summary>
+            Gets or sets the width of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <returns>The width of this <see cref="T:Aspose.OCR.Rectangle" /> structure.</returns>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Height">
+      <summary>
+            Gets or sets the height of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <returns>The height of this <see cref="T:Aspose.OCR.Rectangle" /> structure.</returns>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Left">
+      <summary>
+            Gets or sets the x-coordinate of the left edge of this <see cref="!:Aspose.OCR..Rectangle" /> structure.
+            </summary>
+      <value>The x-coordinate of the left edge of this <see cref="T:Aspose.OCR.Rectangle" /> structure.</value>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Top">
+      <summary>
+            Gets or sets the y-coordinate of the top edge of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <value>
+            The y-coordinate of the top edge of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </value>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Right">
+      <summary>
+            Gets or sets the x-coordinate that is the sum of <see cref="P:Aspose.OCR.Rectangle.X" /> and <see cref="P:Aspose.OCR.Rectangle.Width" /> property values of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <value>
+            The x-coordinate that is the sum of <see cref="P:Aspose.OCR.Rectangle.X" /> and <see cref="P:Aspose.OCR.Rectangle.Width" /> of this <see cref="T:Aspose.OCR.Rectangle" />.
+            </value>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.Bottom">
+      <summary>
+            Gets or sets the y-coordinate that is the sum of the <see cref="P:Aspose.OCR.Rectangle.Y" /> and <see cref="P:Aspose.OCR.Rectangle.Height" /> property values of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <value>
+            The y-coordinate that is the sum of <see cref="P:Aspose.OCR.Rectangle.Y" /> and <see cref="P:Aspose.OCR.Rectangle.Height" /> of this <see cref="T:Aspose.OCR.Rectangle" />.
+            </value>
+    </member>
+    <member name="P:Aspose.OCR.Rectangle.IsEmpty">
+      <summary>
+            Gets a value indicating whether all numeric properties of this <see cref="T:Aspose.OCR.Rectangle" /> have values of zero.
+            </summary>
+      <value>This property returns true if the <see cref="P:Aspose.OCR.Rectangle.Width" />, <see cref="P:Aspose.OCR.Rectangle.Height" />, <see cref="P:Aspose.OCR.Rectangle.X" />, and <see cref="P:Aspose.OCR.Rectangle.Y" /> properties of this <see cref="T:Aspose.OCR.Rectangle" /> all have values of zero; otherwise, false.</value>
+    </member>
+    <member name="M:Aspose.OCR.Rectangle.op_Equality(Aspose.OCR.Rectangle,Aspose.OCR.Rectangle)">
+      <summary>
+            Tests whether two <see cref="T:Aspose.OCR.Rectangle" /> structures have equal location and size.
+            </summary>
+      <param name="left">The <see cref="T:Aspose.OCR.Rectangle" /> structure that is to the left of the equality operator.</param>
+      <param name="right">The <see cref="T:Aspose.OCR.Rectangle" /> structure that is to the right of the equality operator.</param>
+      <returns>This operator returns true if the two <see cref="T:Aspose.OCR.Rectangle" /> structures have equal <see cref="P:Aspose.OCR.Rectangle.X" />, <see cref="P:Aspose.OCR.Rectangle.Y" />, <see cref="P:Aspose.OCR.Rectangle.Width" />, and <see cref="P:Aspose.OCR.Rectangle.Height" /> properties.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Rectangle.op_Inequality(Aspose.OCR.Rectangle,Aspose.OCR.Rectangle)">
+      <summary>
+            Tests whether two <see cref="T:Aspose.OCR.Rectangle" /> structures differ in location or size.
+            </summary>
+      <param name="left">The <see cref="T:Aspose.OCR.Rectangle" /> structure that is to the left of the inequality operator.</param>
+      <param name="right">The <see cref="T:Aspose.OCR.Rectangle" /> structure that is to the right of the inequality operator.</param>
+      <returns>This operator returns true if any of the <see cref="P:Aspose.OCR.Rectangle.X" />, <see cref="P:Aspose.OCR.Rectangle.Y" />, <see cref="P:Aspose.OCR.Rectangle.Width" /> or <see cref="P:Aspose.OCR.Rectangle.Height" /> properties of the two <see cref="T:Aspose.OCR.Rectangle" /> structures are unequal; otherwise false.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Rectangle.Contains(System.Int32,System.Int32)">
+      <summary>
+            Determines if the specified point is contained within this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <param name="x">The x-coordinate of the point to test.</param>
+      <param name="y">The y-coordinate of the point to test.</param>
+      <returns>This method returns true if the point defined by <paramref name="x" /> and <paramref name="y" /> is contained within this <see cref="T:Aspose.OCR.Rectangle" /> structure; otherwise false.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Rectangle.Equals(System.Object)">
+      <summary>
+            Tests whether <paramref name="obj" /> is a <see cref="T:Aspose.OCR.Rectangle" /> structure with the same location and size of this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <param name="obj">The <see cref="T:System.Object" /> to test.</param>
+      <returns>This method returns true if <paramref name="obj" /> is a <see cref="T:Aspose.OCR.Rectangle" /> structure and its <see cref="P:Aspose.OCR.Rectangle.X" />, <see cref="P:Aspose.OCR.Rectangle.Y" />, <see cref="P:Aspose.OCR.Rectangle.Width" />, and <see cref="P:Aspose.OCR.Rectangle.Height" /> properties are equal to the corresponding properties of this <see cref="T:Aspose.OCR.Rectangle" /> structure; otherwise, false.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Rectangle.GetHashCode">
+      <summary>
+            Returns the hash code for this <see cref="T:Aspose.OCR.Rectangle" /> structure.
+            </summary>
+      <returns>An integer that represents the hash code for this rectangle.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Rectangle.ToString">
+      <summary>
+            Converts the attributes of this <see cref="T:Aspose.OCR.Rectangle" /> to a human-readable string.
+            </summary>
+      <returns>A string that contains the position, width, and height of this <see cref="T:Aspose.OCR.Rectangle" /> structure.</returns>
+    </member>
+    <member name="T:Aspose.OCR.Resources">
+      <summary>
+            Manage downloadable resources that enhance Aspose.OCR recognition capabilities.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.Resources.SetRepository(System.String)">
+      <summary>
+            Specify the URL of the online repository from which Aspose.OCR resources will be downloaded.
+            By default, the resources are downloaded from https://github.com/aspose-ocr/resources/.
+            </summary>
+      <param name="url"> URL of the online repository.</param>
+    </member>
+    <member name="M:Aspose.OCR.Resources.GetRepository">
+      <summary>
+            Return the URL of the online repository from which Aspose.OCR resources are downloaded.
+            </summary>
+      <returns>URL of the online repository.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Resources.ListRemote">
+      <summary>
+            List all compatible resources from the online repository.
+            </summary>
+      <returns> List of resources names.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Resources.SetLocalPath(System.String)">
+      <summary>
+            Specify an absolute or relative path to the directory where the resources will be downloaded.
+            If the directory does not exist, it will be created automatically.
+            By default, the resources are downloaded to aspose_data directory in the application's working directory.
+            </summary>
+      <param name="path">Absolute or relative path to the directory.</param>
+    </member>
+    <member name="M:Aspose.OCR.Resources.SetLocalPath(System.String,System.Boolean)">
+      <summary>
+            Specify an absolute or relative path to the directory where the resources will be downloaded.
+            Pass `false` to the `create` parameter to prevent the directory from being created automatically.
+            If the provided directory does not exist and creation is not allowed, the resources will be loaded into the aspose_data directory in the application's working directory.
+            </summary>
+      <param name="path">Absolute or relative path to the directory.</param>
+      <param name="create">Parameter to prevent the directory from being created automatically.</param>
+    </member>
+    <member name="M:Aspose.OCR.Resources.GetLocalPath">
+      <summary>
+            Return the full path to the directory where the resources will be downloaded.
+            </summary>
+      <returns>String with the path to the resources directory.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Resources.ListLocal">
+      <summary>
+            List all Aspose.OCR resources stored in the local directory.
+            </summary>
+      <returns> List all Aspose.OCR resources stored in the local directory.</returns>
+    </member>
+    <member name="M:Aspose.OCR.Resources.AllowAutomaticDownloads(System.Boolean)">
+      <summary>
+            Allow (true) or block (false) automatic downloading of required resources from the online repository.
+             By default, a resource is automatically downloaded when a method that depends on it is called.
+             </summary>
+      <param name="allow">Boolean value to allow or block automatic downloading of required resources.</param>
+    </member>
+    <member name="M:Aspose.OCR.Resources.FetchResources(System.String[])">
+      <summary>
+            Download the resources specified in the `names` parameter from the online repository. If one or more resources are already downloaded, they will be overwritten.
+            You can omit the .OCR extension and use file names only.
+            </summary>
+      <param name="names">Array with resources names. See the ListRemote method.</param>
+    </member>
+    <member name="M:Aspose.OCR.Resources.FetchResource(System.String)">
+      <summary>
+            Download the resource specified in the `name` parameter from the online repository. If the resource is already downloaded, it will be overwritten.
+            You can omit the .OCR extension and use file name only.
+            </summary>
+      <param name="name">String with resource name. See the ListRemote method.</param>
+    </member>
+    <member name="M:Aspose.OCR.Resources.FetchAll">
+      <summary>
+            Download all compatible resources from the online repository. The existing resource files will be overwritten.
+            </summary>
+    </member>
+    <member name="M:Aspose.OCR.Resources.RemoveLocal(System.String)">
+      <summary>
+            Removes the locally stored Aspose.OCR resource.
+            </summary>
+      <param name="name">String with resource name. See the ListRemote method.</param>
+    </member>
+  </members>
+</doc>

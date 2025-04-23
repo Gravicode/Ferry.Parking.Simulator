@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeasureImage", "MeasureImag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator", "Simulator\Simulator.csproj", "{5CEAAC00-B8E4-4A77-89DD-6B4C1A0C2951}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensePlateReader", "LicensePlateReader\LicensePlateReader.csproj", "{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5CEAAC00-B8E4-4A77-89DD-6B4C1A0C2951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CEAAC00-B8E4-4A77-89DD-6B4C1A0C2951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CEAAC00-B8E4-4A77-89DD-6B4C1A0C2951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

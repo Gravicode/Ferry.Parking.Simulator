@@ -1,0 +1,21 @@
+Activation license key stored in 'Aspose.Total.NET.lic'
+
+Just call following method in your application start:
+            new Aspose.Words.License().SetLicense("Aspose.Total.NET.lic Path");
+
+
+Note:
+in ASP.Net Projects you must disable shadow copy
+To disable shadow copy add following setting in web.config file:
+
+<configuration>
+  ...
+  <system.web>
+    ...
+    <hostingEnvironment shadowCopyBinAssemblies="false" />
+    ...
+  </system.web>
+  ...
+</configuration>
+-----------------------------------
+by DownloadDevTools.com

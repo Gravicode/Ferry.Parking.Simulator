@@ -15,7 +15,7 @@ namespace MeasureImage
         string modelPath { set; get; }
         string configPath { set; get; }
         string classNamesPath { set; get; }
-        string YoloDir = @"D:\experiment\AMMA.VLS\Yolo3";
+        string YoloDir = @"C:\experiment\Ferry.Parking.Simulator\src\Yolo3";
         //random assign color to each label
         Scalar[] Colors; //Enumerable.Repeat(false, 80).Select(x => Scalar.RandomColor()).ToArray();
 
