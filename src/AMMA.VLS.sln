@@ -9,6 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator", "Simulator\Simu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensePlateReader", "LicensePlateReader\LicensePlateReader.csproj", "{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SensorSimulator", "SensorSimulator", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "Simulator", "WeightSimulator\Simulator\Simulator.nfproj", "{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialReader", "WeightSimulator\SerialReader\SerialReader.csproj", "{BD2FB688-1DF4-9A03-2C10-5C28F2670DF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlateReader", "PlateReader", "{1282E2AF-5493-40E3-9B1D-D715AC87AD04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sample", "LicenseReader\sample.csproj", "{7BAC1CA5-6AFA-44BC-A3A0-C718FC2F2DAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +37,29 @@ Global
 		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BD2FB688-1DF4-9A03-2C10-5C28F2670DF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2FB688-1DF4-9A03-2C10-5C28F2670DF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2FB688-1DF4-9A03-2C10-5C28F2670DF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2FB688-1DF4-9A03-2C10-5C28F2670DF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAC1CA5-6AFA-44BC-A3A0-C718FC2F2DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BAC1CA5-6AFA-44BC-A3A0-C718FC2F2DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BAC1CA5-6AFA-44BC-A3A0-C718FC2F2DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BAC1CA5-6AFA-44BC-A3A0-C718FC2F2DAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D3881EA-BF0F-4C42-99FE-2EDD480572C2} = {1282E2AF-5493-40E3-9B1D-D715AC87AD04}
+		{0059A3AA-7B21-4F0A-A29A-5658BCD43B9B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BD2FB688-1DF4-9A03-2C10-5C28F2670DF6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7BAC1CA5-6AFA-44BC-A3A0-C718FC2F2DAA} = {1282E2AF-5493-40E3-9B1D-D715AC87AD04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EA4C271-2BCA-4760-B6BD-B5159286098A}
