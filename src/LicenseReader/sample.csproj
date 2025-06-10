@@ -128,43 +128,43 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\lib\windows\x64\DTKAVCodec.dll">
+    <Content Include="..\..\libs\windows\64\DTKAVCodec.dll">
       <Link>x64\DTKAVCodec.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x64\DTKAVFormat.dll">
+    <Content Include="..\..\libs\windows\64\DTKAVFormat.dll">
       <Link>x64\DTKAVFormat.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x64\DTKAVUtil.dll">
+    <Content Include="..\..\libs\windows\64\DTKAVUtil.dll">
       <Link>x64\DTKAVUtil.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x64\DTKLPR4.dll">
+    <Content Include="..\..\libs\windows\64\DTKLPR4.dll">
       <Link>x64\DTKLPR4.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x64\DTKSWScale.dll">
+    <Content Include="..\..\libs\windows\64\DTKSWScale.dll">
       <Link>x64\DTKSWScale.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x86\DTKAVCodec.dll">
+    <Content Include="..\..\libs\windows\86\DTKAVCodec.dll">
       <Link>x86\DTKAVCodec.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x86\DTKAVFormat.dll">
+    <Content Include="..\..\libs\windows\86\DTKAVFormat.dll">
       <Link>x86\DTKAVFormat.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x86\DTKAVUtil.dll">
+    <Content Include="..\..\libs\windows\86\DTKAVUtil.dll">
       <Link>x86\DTKAVUtil.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x86\DTKLPR4.dll">
+    <Content Include="..\..\libs\windows\86\DTKLPR4.dll">
       <Link>x86\DTKLPR4.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\lib\windows\x86\DTKSWScale.dll">
+    <Content Include="..\..\libs\windows\86\DTKSWScale.dll">
       <Link>x86\DTKSWScale.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
